@@ -5,7 +5,7 @@ public class lesson2 {
         System.out.println(positiveOrNegative(0));
         System.out.println(posOrNeg(0));
         printStringSevTies("Hello", 5);
-        System.out.println(longYear(1996));
+        System.out.println(longYear(100));
     }
 
     public static boolean twoNumbersSum(int a, int b){
@@ -26,7 +26,7 @@ public class lesson2 {
     }
 
     public static boolean longYear (int a){
-        return (a%4 == 0 || a%400 == 0);
+        return ((a%4 == 0 && a%100 != 0) || a%400 == 0);
     }
 
 }
